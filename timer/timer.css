@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bungee', cursive;
+  transition: all 0.2s ease;
+}
+
+@font-face {
+  font-family: 'digital';
+  src: url(/fontz/Technology.ttf);
+}
+
+/* font-family: 'Bungee', cursive; */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: slateblue;
+}
+
+#mode {
+  cursor: pointer;
+  color: slateblue;
+}
+
+#mode:hover {
+  transform: scale(1.1);
+  transition: all 0.6s ease;
+}
+
+#otherwidgets div:hover {
+  transform: scale(1.1);
+  transition: all 0.6s ease;
+}
+
+#otherwidgets {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 20%;
+}
+
+section {
+  margin: 100px auto;
+  width: 100%;
+  height: 60vh;
+}
+
+.container {
+  margin: 10px auto;
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 130px 50px 100px;
+}
+
+#theTimer {
+  font-size: 110px;
+  font-weight: bold;
+  text-align: center;
+  font-family: digital;
+}
+
+.timerCont1 {
+  width: 100%;
+  height: 100%;
+  font-size: 110px;
+  font-weight: bold;
+  text-align: center;
+  font-family: digital;
+  display: none;
+  color: slateblue;
+}
+
+.timerCont2 {
+  width: 100%;
+  height: 100%;
+  font-size: 110px;
+  font-weight: bold;
+  text-align: center;
+  font-family: digital;
+  color: slateblue;
+}
+
+
+.bar {
+  height: 10px;
+  width: 100%;
+  background-color: #cacaca;
+  border-radius: 15px;
+}
+
+.timeLeft {
+  width: 100%;
+  height: 100%;
+  background-color: slateblue;
+  border-radius: 15px;
+  transition: all 0.1 ease;
+}
+
+.input {
+  position: relative;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+  font-size: 25px;
+  text-align: center; 
+  color: slateblue;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button1 {
+  height: 70px;
+  width: 110px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  background-color: slateblue;
+  font-size: 18px;
+}
+
+.button1:hover {
+  font-size: 20px;
+}
+
+.nightMode {
+  color: slateblue;
+  background-color: black;
+  background-image: none;
+}
+
+.nightModeIB{
+  background-color: rgb(7, 7, 7);
+  color: slateblue;
+  border: 1px solid slateblue;
+}
+
+.nightModeOB{
+  color: black;
+  background-color: slateblue;
+}
+
+.nightModeOBa{
+  background-color: black;
+  color:slateblue;
+  border: none;
+}
+
+ 
+
+@media (max-width:1050px) {
+  nav {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  #otherwidgets {
+    flex-basis: 35%;
+  }
+}
+
+@media (max-width:460px) {
+  nav {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  #otherwidgets {
+    flex-basis: 45%;
+    justify-content: space-between;
+  }
+
+  .input {
+    bottom: 35px;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .container {
+    grid-template-rows: 110px 30px 70px;
+  }
+
+
+  .button1 {
+    height: 60px;
+    width: 90px;
+    font-size: 16px;
+  }
+
+  .button1:hover {
+    font-size: 18px;
+  }
+
+  .timerCont1 {
+    font-size: 80px;
+  }
+  
+}

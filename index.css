@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bungee', cursive;
+  transition: all 0.2s ease;
+}
+
+@font-face {
+  font-family: 'digital';
+  src: url(/fontz/Technology.ttf);
+}
+
+/* font-family: 'Bungee', cursive; */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: #a5391b;
+}
+#mode {
+  cursor: pointer;
+  color: #a5391b;
+}
+
+#mode:hover{
+  transform: scale(1.1);
+  transition: all 0.6s ease;
+}
+
+#otherwidgets div:hover{
+  transform: scale(1.1);
+  transition: all 0.6s ease;
+}
+
+#otherwidgets {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 20%;
+}
+
+
+section {
+  margin: 50px auto;
+  width: 550px;
+  height: 350px;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-image: url(/R.jpg);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  background-size: cover;
+  border-radius: 40px;
+}
+
+#outerclockbody {
+  width: 450px;
+  height: 250px;
+  padding: 30px;
+  background-color: black;
+  border-radius: 20px;
+
+}
+
+#mymark {
+  color: #adaba8;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+#innerclockbody {
+  width: 390px;
+  height: 190px;
+  background-color: white;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #adaba8, #fefefe);
+  /* #c0bdb8 #fefefe */
+}
+
+#clockbody {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 0px;
+  grid-template-rows: 47px 94px 47px;
+
+
+}
+
+.digital {
+  font-family: digital;
+}
+
+#day {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  top: -1px;
+  
+}
+
+#time {
+  position: relative;
+  font-size: 110px;
+  font-weight: bold;
+  text-align: center;
+  top: -7px;
+  margin-top: 5px;
+}
+
+#meridian {
+  font-size: 50px;
+  font-weight: normal;
+  font-family: digital;
+}
+
+#date {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+  font-size: 50px;
+  margin-top: 5px;
+}
+
+#message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3em;
+  color: #440e06;
+}
+
+.nightMode {
+  color: #a5391b;
+  background-color: black;
+  background-image: none;
+
+}
+
+@media (max-width:1050px){
+  nav {
+    padding: 20px;
+    font-size:18px;
+  }
+
+  #otherwidgets {
+    flex-basis: 35%;
+  }
+}
+
+@media (max-width:460px) {
+  nav {
+    padding: 15px;
+    font-size:12px;
+  }
+
+  #otherwidgets {
+    flex-basis: 45%;
+  }
+  
+  section {
+    width: 300px;
+    height: 200px;
+  
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  
+  #outerclockbody {
+    width: 260px;
+    height: 160px;
+    padding: 13px;
+  
+  }
+  
+  #mymark {
+    font-size: 10px;
+  }
+  
+  #innerclockbody {
+    width: 230px;
+    height: 130px;
+  }
+  
+  #clockbody {
+    grid-template-rows: 32px 65px 32px;
+  }
+
+  #day {
+    font-size: 35px;
+  }
+  
+  #time {
+    font-size: 68px;
+    margin-top: 5px;
+  }
+  
+  #meridian {
+    font-size: 30px;
+  }
+  
+  #date {
+    font-size: 32px;
+  }
+  
+  #message {
+    font-size: 2em;
+  }
+}
+
+

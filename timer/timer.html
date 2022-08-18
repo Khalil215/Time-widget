@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="timer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <script src="timer.js" defer></script>
+    <title>Timer</title>
+  </head>
+  <body>
+    <nav>
+      <div id="mode">Change Mode</div>
+      <div id="otherwidgets">
+        <div class="widget" id="clock"><a href="/index.html">Clock</a></div>
+        <div class="widget" id="stopwatch"><a href="/stopwatch/Stop.html">Stopwatch</a></div>
+      </div>
+    </nav>
+
+    <section>
+      <form action="">
+        <div class="container">
+          <div id="theTimer">
+            <div class="timerCont1"></div>
+            <div class="timerCont2">
+              <input type="number" placeholder="Hour" id="Hour" class='input'/>:<input
+              type="number"
+              placeholder="Mins" id="Mins" class='input'
+            />:<input type="number" placeholder="Secs" id="Secs" class='input'/>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="timeLeft"></div>
+          </div>
+          <div class="button">
+            <button  class='button1' id="start">Start</button>
+            <button type="reset" id="reset" class='button1' >Reset</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
